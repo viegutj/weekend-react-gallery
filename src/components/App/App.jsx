@@ -1,6 +1,11 @@
 import React from 'react';
 import './App.css';
 
+// GET route using Axios to retrieve images and display them to the DOM
+function getGalleryData (){
+// axios
+}
+
 function App() {
     return (
       <div className="App">
