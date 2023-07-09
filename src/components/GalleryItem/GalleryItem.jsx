@@ -3,13 +3,13 @@
 function GalleryItem(props) {
     // return what we want to individually display for each item
     return(
-        <li>
+        <div>
             <h5>{props.item.description}</h5>
             <div>
                 <img src={`${props.item.path}`} alt="dog" />
                 <p>Love it!</p>
             </div>
-        </li>
+            </div>
     )
 } // end GalleryItem
 
