@@ -7,12 +7,12 @@ import './GalleryList.css'
 
 // create function to .map() the incoming data
     // parameters will be 
-function GalleryList({galleryList}) {
+function GalleryList({galleryList, likeDog}) {
     // we want to be returning what we're appending to the DOM
     return (
         <ul className="butts">{galleryList.map((item) => (
             // pass it the gallery data stored in `App` via `props`.
-                <GalleryItem className="GalleryItem" key={item.id} item={item}/>
+                <GalleryItem className="GalleryItem" key={item.id} item={item} likeDog={likeDog}/>
         ))}</ul>
     )
 } // end GalleryList

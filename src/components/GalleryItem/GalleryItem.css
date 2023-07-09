@@ -1,15 +1,13 @@
 img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 h5{
     margin-bottom: 0px;
 }
 
-/* .GalleryItem{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-} */
+p{
+    margin-top: 100px;
+    text-align: center;
+}

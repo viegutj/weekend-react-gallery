@@ -31,13 +31,30 @@ function App() {
     getGalleryData();
   })
 
+  // update item
+  const likeDog = (likeToUpdate) => {
+    console.log(likeToUpdate);
+    axios({
+        method: "PUT",
+        url: `gallery/like/${likeToUpdate.id}`,
+    })
+      .then((response) => {
+          console.log("Liked a dog!");
+          getGalleryData();
+      })
+      .catch((error) => {
+          alert("Error in UPDATEing item in database: ", error);
+          console.log(error);
+      });
+  };
+
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of Cute Dogs</h1>
         </header>
         <h2>Jonathan Viegut: React Project</h2>
-        <GalleryList class="GalleryList" galleryList={galleryList}/>
+        <GalleryList class="GalleryList" galleryList={galleryList} likeDog={likeDog}/>
       </div>
     );
 }
