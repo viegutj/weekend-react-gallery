@@ -3,15 +3,15 @@
     // the object has three
 const galleryItems = [
     { id: 1, 
-        path: 'images/goat_small.jpg', 
+        path: 'https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/iStock-177369626-1-0e8d40eaabe65d2cb2d745ef45f09229.jpg', 
         description: 'Photo of a goat taken at Glacier National Park.', 
         likes: 0 },
     {id: 2, 
-        path:'images/pug.jpg', 
+        path:'..public/images/pug.jpg', 
         description: 'dog with bulgy eyes', 
         likes: 0},
     {id: 3, 
-        path: 'images/woof.jpg', 
+        path: '..public/images/woof.jpg', 
         description: 'woofing dog', 
         likes: 0},
     {id: 4, 

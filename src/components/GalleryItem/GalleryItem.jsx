@@ -6,7 +6,7 @@ function GalleryItem(props) {
         <li>
             <h5>{props.item.description}</h5>
             <div>
-                <p>{props.item.path}</p>
+                <img src={`${props.item.path}`} alt="dog" />
                 <p>Love it!</p>
             </div>
         </li>
