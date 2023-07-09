@@ -19,18 +19,26 @@ function GalleryItem(props) {
         });
     }
 
+    let textForLikes=''
+    if(props.item.likes){
+        textForLikes = `${props.item.likes} people like this!`
+    } else {
+        textForLikes = 'no people love this :('
+    }
+
     if (flipCard) {
         // return what we want to individually display for each item
         return(
             <div className='GalleryItem'>
             <div>
                 <img onClick={handleFlip} src={`${props.item.path}`} alt="dog" />
-                {/* style={{ width: 100, height: 100 }}  */}
                 <div>
                     <button onClick={handleLikes}>
                         Love It!
                     </button>
-                    ❤️ {props.item.likes}
+                    <div>
+                    {textForLikes}
+                    </div>
                 </div>
             </div>
         </div>

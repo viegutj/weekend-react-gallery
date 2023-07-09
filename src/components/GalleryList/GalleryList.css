@@ -1,6 +1,11 @@
-.butts{
+.list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-around; */
+}
+
+.GalleryItem{
+    flex-basis: 33.333333%
+
 }
