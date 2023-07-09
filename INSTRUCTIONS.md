@@ -1,6 +1,8 @@
 # React - Gallery of My Life
 
-[x] Before you get started make sure to look through the code that has been provided. Server side code to retrieve data (`GET`) and like a photo (`PUT`) have been provided for you. For practice, we recommend testing out these routes in Postman. You should not need to modify these routes for base mode. (can't do this until we finish setup?)
+[x] Before you get started make sure to look through the code that has been provided. Server side code to retrieve data (`GET`) and like a photo (`PUT`) have been provided for you. For practice, we recommend testing out these routes in Postman. You should not need to modify these routes for base mode. 
+
+!!! (Can't do this in base mode. There is no database for me to use Postman with. Why is this the first part of the directions?)
 
 ### Setup
 
@@ -37,7 +39,7 @@ To practice passing values through `props` in React, you will build the gallery 
 ![mockup two](wireframes/second-mockup.png)
 
 ### Task List
-- [ ] Use `axios` to retrieve (`GET`) data from to `/gallery` and store it in `App.jsx`.
+- [x] Use `axios` to retrieve (`GET`) data from to `/gallery` and store it in `App.jsx`.
 - [ ] Create a new **component** for the `GalleryList` and pass it the gallery data stored in `App` via `props`.
     - [ ] Iterate (loop over) the list of gallery data
     - [ ] Make GalleryItems

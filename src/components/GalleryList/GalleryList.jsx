@@ -8,7 +8,8 @@ function GalleryList({galleryList}) {
     // we want to be returning what we're appending to the DOM
     return (
         <ul>{galleryList.map((item) => (
-            <GalleryItem key={item}/>
+            // pass it the gallery data stored in `App` via `props`.
+            <GalleryItem key={item.id} item={item}/>
         ))}</ul>
     )
 } // end GalleryList

@@ -18,9 +18,9 @@ function App() {
       method: 'GET',
       url: '/gallery'
     }).then((response) => {
-      console.log('GET response is: ', response);
-      console.log('GET response.data is: ', response.data);
-      setGalleryList(response.data)
+      // console.log('GET response is: ', response);
+      // console.log('GET response.data is: ', response.data);
+      setGalleryList(response.data);
     }).catch((error) => {
       console.log('error in GET: ', error);
     })
@@ -28,7 +28,7 @@ function App() {
   // useEffect for GET route on client-side
     // This acts like out 'onReady' from jQuery
   useEffect(() => {
-    getGalleryData
+    getGalleryData();
   })
 
     return (
@@ -37,8 +37,8 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
-        <GalleryList />
-        <img src="images/goat_small.jpg"/>
+        {/* <GalleryList galleryList={{galleryList}}/> */}
+        <GalleryList galleryList={galleryList}/>
       </div>
     );
 }
