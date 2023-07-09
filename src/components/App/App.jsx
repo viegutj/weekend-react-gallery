@@ -34,10 +34,10 @@ function App() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
+          <h1 className="App-title">Gallery of Cute Dogs</h1>
         </header>
-        <p>Gallery goes here</p>
-        <GalleryList galleryList={galleryList}/>
+        <h2>Jonathan Viegut: React Project</h2>
+        <GalleryList class="GalleryList" galleryList={galleryList}/>
       </div>
     );
 }
