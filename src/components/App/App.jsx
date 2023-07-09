@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import {useState, useEffect} from 'react';
 import './App.css';
+import GalleryList from '../GalleryList/GalleryList';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   // GET route using Axios to retrieve images and display them to the DOM
   function getGalleryData (){
   // axios GET
-    Axios({
+    axios({
       method: 'GET',
       url: '/gallery'
     }).then((response) => {
@@ -36,7 +37,7 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
-        {/* <GalleryList /> */}
+        <GalleryList />
         <img src="images/goat_small.jpg"/>
       </div>
     );
